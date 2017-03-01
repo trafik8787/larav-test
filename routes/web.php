@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+//Route::delete('articles/{id}', 'ArticleController@destroy')->where('id', '[0-9]+');
+//
+//Route::get('articles/{id}', 'ArticleController@show')->where('id', '[0-9]+');
+
+/**
+ * Все REST методы
+ */
+Route::resource('articles', 'ArticleController');
+
+Route::get('/', 'MainController@index');
