@@ -23,3 +23,6 @@
 Route::resource('articles', 'ArticleController');
 
 Route::get('/', 'MainController@index');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
