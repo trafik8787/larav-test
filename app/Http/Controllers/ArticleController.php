@@ -6,10 +6,16 @@ use App\Article;
 use App\Http\Requests\ArticleRequest;
 use Faker\Provider\Image;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 
 class ArticleController extends Controller
 {
+
+
+    public function __construct () {
+        $this->middleware('articleGuest', ['only' => ['create', 'edit']]);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -17,7 +23,9 @@ class ArticleController extends Controller
      */
     public function index()
     {
-//        dd($condition);
+
+
+        //dd();
         $data = array();
         $data['articles'] = Article::all();
 
