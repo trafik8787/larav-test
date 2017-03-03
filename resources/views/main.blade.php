@@ -18,6 +18,7 @@
             @include('common.left_blok')
         </div>
         <div class="col-md-8">
+            @include('flash::message')
             @yield('content')
         </div>
     </div>

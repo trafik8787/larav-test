@@ -3,7 +3,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2017-02-28.
+    * Generated on 2017-03-03.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -39,6 +39,9 @@ namespace PHPSTORM_META {
             'view' instanceof \Illuminate\View\Factory,
             'view.finder' instanceof \Illuminate\View\FileViewFinder,
             'view.engine.resolver' instanceof \Illuminate\View\Engines\EngineResolver,
+            'image' instanceof \Intervention\Image\ImageManager,
+            'Laracasts\Flash\SessionStore' instanceof \Laracasts\Flash\LaravelSessionStore,
+            'flash' instanceof \Laracasts\Flash\FlashNotifier,
             'command.laracasts.seed' instanceof \Laracasts\Generators\Commands\SeedMakeCommand,
             'command.laracasts.migrate' instanceof \Laracasts\Generators\Commands\MigrationMakeCommand,
             'command.laracasts.migrate.pivot' instanceof \Laracasts\Generators\Commands\PivotMigrationMakeCommand,
@@ -166,6 +169,9 @@ namespace PHPSTORM_META {
             'view' instanceof \Illuminate\View\Factory,
             'view.finder' instanceof \Illuminate\View\FileViewFinder,
             'view.engine.resolver' instanceof \Illuminate\View\Engines\EngineResolver,
+            'image' instanceof \Intervention\Image\ImageManager,
+            'Laracasts\Flash\SessionStore' instanceof \Laracasts\Flash\LaravelSessionStore,
+            'flash' instanceof \Laracasts\Flash\FlashNotifier,
             'command.laracasts.seed' instanceof \Laracasts\Generators\Commands\SeedMakeCommand,
             'command.laracasts.migrate' instanceof \Laracasts\Generators\Commands\MigrationMakeCommand,
             'command.laracasts.migrate.pivot' instanceof \Laracasts\Generators\Commands\PivotMigrationMakeCommand,
@@ -293,6 +299,9 @@ namespace PHPSTORM_META {
             'view' instanceof \Illuminate\View\Factory,
             'view.finder' instanceof \Illuminate\View\FileViewFinder,
             'view.engine.resolver' instanceof \Illuminate\View\Engines\EngineResolver,
+            'image' instanceof \Intervention\Image\ImageManager,
+            'Laracasts\Flash\SessionStore' instanceof \Laracasts\Flash\LaravelSessionStore,
+            'flash' instanceof \Laracasts\Flash\FlashNotifier,
             'command.laracasts.seed' instanceof \Laracasts\Generators\Commands\SeedMakeCommand,
             'command.laracasts.migrate' instanceof \Laracasts\Generators\Commands\MigrationMakeCommand,
             'command.laracasts.migrate.pivot' instanceof \Laracasts\Generators\Commands\PivotMigrationMakeCommand,
@@ -420,6 +429,9 @@ namespace PHPSTORM_META {
             'view' instanceof \Illuminate\View\Factory,
             'view.finder' instanceof \Illuminate\View\FileViewFinder,
             'view.engine.resolver' instanceof \Illuminate\View\Engines\EngineResolver,
+            'image' instanceof \Intervention\Image\ImageManager,
+            'Laracasts\Flash\SessionStore' instanceof \Laracasts\Flash\LaravelSessionStore,
+            'flash' instanceof \Laracasts\Flash\FlashNotifier,
             'command.laracasts.seed' instanceof \Laracasts\Generators\Commands\SeedMakeCommand,
             'command.laracasts.migrate' instanceof \Laracasts\Generators\Commands\MigrationMakeCommand,
             'command.laracasts.migrate.pivot' instanceof \Laracasts\Generators\Commands\PivotMigrationMakeCommand,

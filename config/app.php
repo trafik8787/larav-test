@@ -163,6 +163,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
+            //add
         Collective\Html\HtmlServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
 
@@ -171,7 +172,10 @@ return [
          */
         Laravel\Tinker\TinkerServiceProvider::class,
 
+        //flash add
+        Laracasts\Flash\FlashServiceProvider::class,
 
+        //add
         Laracasts\Generators\GeneratorsServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
@@ -241,6 +245,7 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'ImagesNew' => Intervention\Image\Facades\Image::class,
+
     ],
 
 ];

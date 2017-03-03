@@ -8,6 +8,7 @@ use Faker\Provider\Image;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
+use Laracasts\Flash\Flash;
 
 class ArticleController extends Controller
 {
@@ -53,16 +54,19 @@ class ArticleController extends Controller
         //$file->move('/home/vitalik/laravel-site2/www/public/upload/image');
         //dd($file);
 
-        $filename = uniqid('img_', true).'jpg';
+        $filename = uniqid('img_', false).'.jpg';
 
-        \Intervention\Image\Facades\Image::make($file)->resize(700, 480)->save('/home/vitalik/laravel-site2/www/public/upload/image'.$filename, 60);
-        \Intervention\Image\Facades\Image::make($file)->resize(300, 200)->save('/home/vitalik/laravel-site2/www/public/upload/image/pre'.$filename, 60);
+        \Intervention\Image\Facades\Image::make($file)->resize(700, 480)->save('/home/vitalik/laravel-site2/www/public/upload/image/'.$filename, 60);
+        \Intervention\Image\Facades\Image::make($file)->resize(300, 200)->save('/home/vitalik/laravel-site2/www/public/upload/image/pre/'.$filename, 60);
 
         $article = new Article();
         $article->title = $request->title;
         $article->description = $request->description;
-        $article->image = '';
+        $article->image = $filename;
         $article->save();
+
+        flash('Все ок', 'success');
+
         return redirect('/articles');
 
     }
